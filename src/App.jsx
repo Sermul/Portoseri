@@ -142,11 +142,7 @@ function App() {
 
 
                 <BlurText
-                  text="Hello! I'm Seri Muliani Lubis, a UI/UX Designer and Front-End Developer with a strong passion for creating digital experiences that are both beautiful and functional.
-
-My journey in technology began with a deep interest in visual design, which inspired me to explore user interface (UI) and user experience (UX) design. Over time, I expanded my skills into web development, turning design concepts into interactive and responsive websites using HTML, CSS, JavaScript, and React (Vite).
-
-I love combining creativity and logic, designing with empathy to ensure every interaction feels natural across devices. I’m constantly learning and adapting to new design trends and technologies to create meaningful digital solutions that truly connect with users."
+                  text="Hello! I'm Seri Muliani Lubis, a Junior Full Stack Developer with experience in building REST API using Go and developing web frontends using HTML, CSS, and JavaScript. I have a solid understanding of UI/UX principles for designing responsive and user-friendly interfaces, and I am capable of translating designs into functional web applications.I am enthusiastic about learning new technologies and continuously growing in the field of web development."
                   delay={150}
                   animateBy="words"
                   direction="top"
