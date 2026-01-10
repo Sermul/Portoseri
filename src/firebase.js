@@ -3,6 +3,7 @@ import { initializeApp } from "firebase/app";
 import { getAuth, GoogleAuthProvider, signInWithPopup, signOut } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
+
 const firebaseConfig = {
   apiKey: "AIzaSyBFgA6JpGqNBrWPfR-lKercjvy5Y6ky7zc",
   authDomain: "webportofolio-8498b.firebaseapp.com",

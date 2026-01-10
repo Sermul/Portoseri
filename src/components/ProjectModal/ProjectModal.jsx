@@ -71,8 +71,7 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
                 rel="noopener noreferrer"
                 className="mt-4 inline-flex items-center justify-center gap-2 font-semibold bg-violet-600 p-3 px-5 rounded-full w-full cursor-pointer border border-transparent hover:bg-violet-700 transition-colors"
             >
-                <FiGithub />
-                <span>Source Code</span>
+                <span>View Project</span>
             </a>
         </div>
       </div>

@@ -13,6 +13,7 @@ import Aurora from "./components/Aurora/Aurora";
 import AOS from 'aos';
 import ChatRoom from "./components/ChatRoom";
 import 'aos/dist/aos.css'; // You can also use <link> for styles
+
 // ..
 AOS.init();
 
@@ -32,6 +33,7 @@ function App() {
   // -------------------------
 
   useEffect(() => {
+    
     const isReload =
       performance.getEntriesByType("navigation")[0]?.type === "reload";
 
@@ -59,7 +61,17 @@ function App() {
 
     return () => observer.disconnect();
   }, []);
+// ✅ Tambahkan ini di bawahnya
+  useEffect(() => {
+    const container = document.getElementById("scrollContainer");
+    const leftBtn = document.getElementById("scrollLeft");
+    const rightBtn = document.getElementById("scrollRight");
 
+    if (leftBtn && rightBtn && container) {
+      leftBtn.onclick = () => container.scrollBy({ left: -400, behavior: "smooth" });
+      rightBtn.onclick = () => container.scrollBy({ left: 400, behavior: "smooth" });
+    }
+  }, []);
   return (
     <>
       <div className="absolute top-0 left-0 w-full h-full -z-10 ">
@@ -75,14 +87,14 @@ function App() {
         <div className="hero grid md:grid-cols-2 items-center pt-10 xl:gap-0 gap-6 grid-cols-1">
           <div className="animate__animated animate__fadeInUp animate__delay-3s">
             <div className="flex items-center gap-3 mb-6 bg bg-zinc-800 w-fit p-4 rounded-2xl">
-              <img src="./assets/faris1.png" className="w-10 rounded-md" />
-              <q>Avoid or just undertake it</q>
+              <img src="./assets/seri2.png" className="w-10 rounded-md" />
+              <q>Don’t run from challenges — face them and grow through them</q>
             </div>
             <h1 className="text-5xl font-bold mb-6">
-              <ShinyText text="Hi I'm Faris Edrik Prayoga" disabled={false} speed={3} className='custom-class' />
+              <ShinyText text="Hi I'm Seri Muliani Lubis" disabled={false} speed={3} className='custom-class' />
             </h1>
             <BlurText
-              text="A passionate application and web developer dedicated to crafting modern, high-performance digital experiences through innovative and user-friendly solutions."
+              text="Dedicated to designing and developing modern, high-quality web interfaces that combine aesthetics, performance, and usability."
               delay={150}
               animateBy="words"
               direction="top"
@@ -91,7 +103,7 @@ function App() {
             <div className="flex items-center sm:gap-4 gap-2">
               <a 
                 href="./assets/CV.pdf" 
-                download="Faris_Edrik_Prayoga_CV.pdf" 
+                download="Seri_Muliani_Lubis_CV.pdf" 
                 className="font-semibold bg-[#1a1a1a] p-4 px-6 rounded-full border border-gray-700 hover:bg-[#222] transition-colors"
               >
                 <ShinyText text="Download CV" disabled={false} speed={3} className="custom-class" />
@@ -105,12 +117,12 @@ function App() {
           </div>
           <div className="md:ml-auto animate__animated animate__fadeInUp animate__delay-4s">
             <ProfileCard
-              name="Faris Edrik P"
+              name="Seri Muliani Lubis"
               title="Web Developer"
-              handle="farisedrikp"
+              handle="serimuliani"
               status="Online"
               contactText="Contact Me"
-              avatarUrl="./assets/faris.png"
+              avatarUrl="./assets/seri2.png"
               showUserInfo={true}
               enableTilt={true}
               enableMobileTilt={false}
@@ -121,45 +133,37 @@ function App() {
         {/* tentang */}
         <div className="mt-15 mx-auto w-full max-w-[1600px] rounded-3xl border-[5px] border-violet-500/40 shadow-[0_0_30px_rgba(168,85,247,0.4)] bg-gradient-to-br from-[#0a0a0a] via-[#111111] to-[#1a1a1a] p-6" id="about">
           <div className="flex flex-col md:flex-row items-center justify-between gap-10 pt-0 px-8" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
-            <div className="basis-full md:basis-7/12 pr-0 md:pr-8 border-b md:border-b-0 md:border-r border-violet-500/30">
+            <div className="w-full">
               {/* Kolom kiri */}
               <div className="flex-1 text-left">
-                <h2 className="text-3xl md:text-4xl font-bold text-white mb-5">
-                  About Me
-                </h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-5 text-center">
+  About Me
+</h2>
+
 
                 <BlurText
-                  text="I’m Faris Edrik Prayoga, a full-stack developer passionate about building modern, high-performance applications with an intuitive user experience. I enjoy working with the latest technologies like Artificial Intelligence, Machine Learning, and cloud-based development, blending creativity with precision to deliver impactful solutions. With over three years of experience and more than 20 completed projects, I’m committed to helping users and businesses grow in the digital era through functional, aesthetic, and scalable digital products."
+                  text="Hello! I'm Seri Muliani Lubis, a UI/UX Designer and Front-End Developer with a strong passion for creating digital experiences that are both beautiful and functional.
+
+My journey in technology began with a deep interest in visual design, which inspired me to explore user interface (UI) and user experience (UX) design. Over time, I expanded my skills into web development, turning design concepts into interactive and responsive websites using HTML, CSS, JavaScript, and React (Vite).
+
+I love combining creativity and logic, designing with empathy to ensure every interaction feels natural across devices. I’m constantly learning and adapting to new design trends and technologies to create meaningful digital solutions that truly connect with users."
                   delay={150}
                   animateBy="words"
                   direction="top"
-                  className="text-base md:text-lg leading-relaxed mb-10 text-gray-300"
+                  className="text-base md:text-lg leading-relaxed mb-10 text-gray-300 text-justify"
                 />
 
                 <div className="flex flex-col sm:flex-row items-center sm:justify-between text-center sm:text-left gap-y-8 sm:gap-y-0 mb-4 w-full">
                   <div>
-                    <h1 className="text-3xl md:text-4xl mb-1">
-                      20<span className="text-violet-500">+</span>
-                    </h1>
-                    <p>Project Finished</p>
-                  </div>
-                  <div>
-                    <h1 className="text-3xl md:text-4xl mb-1">
-                      3<span className="text-violet-500">+</span>
-                    </h1>
-                    <p>Years of Experience</p>
-                  </div>
-                  <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" data-aos-once="true">
-                    <h1 className="text-3xl md:text-4xl mb-1">
-                      3.81<span className="text-violet-500">/4.00</span>
-                    </h1>
-                    <p>GPA</p>
+                   
+                    
+                    
                   </div>
                 </div>
 
 
                 <ShinyText
-                  text="Working with heart, creating with mind."
+               
                   disabled={false}
                   speed={3}
                   className="text-sm md:text-base text-violet-400"
@@ -168,9 +172,9 @@ function App() {
             </div>
 
             {/* Kolom kanan */}
-            <div className="basis-full md:basis-5/12 pl-0 md:pl-8 overflow-hidden max-w-full flex justify-center ">
+            {/* <div className="basis-full md:basis-5/12 pl-0 md:pl-8 overflow-hidden max-w-full flex justify-center ">
               <Lanyard position={[0, 0, 15]} gravity={[0, -40, 0]} />
-            </div>
+            </div> */}
           </div>
 
         </div>
@@ -209,7 +213,7 @@ function App() {
         {/* Proyek */}
         <div className="proyek mt-32 py-10" id="project" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true"></div>
         <h1 className="text-center text-4xl font-bold mb-2" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">Project</h1>
-        <p className="text-base/loose text-center opacity-50" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">Showcasing a selection of projects that reflect my skills, creativity, and passion for building meaningful digital experiences.</p>
+        <p className="text-base/loose text-center opacity-50" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">A selection of projects that highlight skills, creativity, and passion in building meaningful digital experiences.</p>
         <div className="proyek-box mt-14" >
 
           <div style={{ height: 'auto', position: 'relative' }} data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" data-aos-once="true" >
@@ -224,93 +228,64 @@ function App() {
           </div>
         </div>
         {/* Proyek */}
+{/* Pengalaman Organisasi */}
+<div
+  className="organisasi mt-32 py-10 relative"
+  id="organization"
+  data-aos="fade-up"
+  data-aos-duration="1000"
+  data-aos-once="true"
+>
+  <h1 className="text-center text-4xl font-bold mb-2">Organizational Experience</h1>
+  <p className="text-base/loose text-center opacity-50 mb-10">
+    Some of my memorable moments and teamwork experiences in organizations.
+  </p>
 
+  {/* Tombol panah kiri-kanan */}
+  <button
+    id="scrollLeft"
+    className="absolute left-2 top-1/2 -translate-y-1/2 z-10 bg-violet-600/50 hover:bg-violet-600 text-white rounded-full w-12 h-12 flex items-center justify-center transition-all duration-300"
+  >
+    ‹
+  </button>
+  <button
+    id="scrollRight"
+    className="absolute right-2 top-1/2 -translate-y-1/2 z-10 bg-violet-600/50 hover:bg-violet-600 text-white rounded-full w-12 h-12 flex items-center justify-center transition-all duration-300"
+  >
+    ›
+  </button>
 
-        {/* Kontak */}
-        <div className="kontak mt-32 sm:p-10 p-0" id="contact">
-          <h1
-            className="text-4xl mb-2 font-bold text-center"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-once="true"
-          >
-            Contact & Chat
-          </h1>
-          <p
-            className="text-base/loose text-center mb-10 opacity-50"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="300"
-            data-aos-once="true"
-          >
-            Get in touch with me or chat in real-time
-          </p>
-
-          {/* Container dua kolom */}
-          <div className="flex flex-col md:flex-row gap-8">
-            {/* Chat Room di kiri */}
-            <div className="flex-1 bg-zinc-800 p-6 rounded-md" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" data-aos-once="true">
-              <ChatRoom />
-            </div>
-
-            {/* Contact Form di kanan */}
-            <div className="flex-1">
-              <form
-                action="https://formsubmit.co/rissoppa21@gmail.com"
-                method="POST"
-                className="bg-zinc-800 p-10 w-full rounded-md"
-                autoComplete="off"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="500"
-                data-aos-once="true"
-              >
-                <div className="flex flex-col gap-6">
-                  <div className="flex flex-col gap-2">
-                    <label className="font-semibold">Full Name</label>
-                    <input
-                      type="text"
-                      name="Name"
-                      placeholder="Input Name..."
-                      className="border border-zinc-500 p-2 rounded-md"
-                      required
-                    />
-                  </div>
-                  <div className="flex flex-col gap-2">
-                    <label className="font-semibold">Email</label>
-                    <input
-                      type="email"
-                      name="Email"
-                      placeholder="Input Email..."
-                      className="border border-zinc-500 p-2 rounded-md"
-                      required
-                    />
-                  </div>
-                  <div className="flex flex-col gap-2">
-                    <label htmlFor="message" className="font-semibold">Message</label>
-                    <textarea
-                      name="message"
-                      id="message"
-                      cols="45"
-                      rows="7"
-                      placeholder="Message..."
-                      className="border border-zinc-500 p-2 rounded-md"
-                      required
-                    ></textarea>
-                  </div>
-                  <div className="text-center">
-                    <button
-                      type="submit"
-                      className="font-semibold bg-[#1a1a1a] p-4 px-6 rounded-full w-full cursor-pointer border border-gray-700 hover:bg-[#222] transition-colors"
-                    >
-                      <ShinyText text="Send" disabled={false} speed={3} className="custom-class" />
-                    </button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
+  {/* Scrollable Photo Section */}
+  <div
+    id="scrollContainer"
+    className="flex gap-10 overflow-x-hidden scroll-smooth px-16"
+  >
+    {[
+      { src: "./assets/org1.jpg", title: "Organization of Informatics Engineering Students, Universitas Airlangga", desc: "Member of the Talent and Interests Section." },
+      { src: "./assets/org2.jpg", title: "Design TeaIKAMABA – The Dance Talent Section", desc: "Member of the Dance Talent Section." },
+      { src: "./assets/org3.jpg", title: "IKAMABA – Arts and Sports Division", desc: "Member of the Arts and Sports Division." },
+      { src: "./assets/org4.jpg", title: "Universitas Airlangga Softball Team – Player", desc: "Active player of the university softball team." },
+    ].map((org, index) => (
+      <div
+        key={index}
+        className="relative flex-shrink-0 w-[400px] h-[260px] rounded-3xl overflow-hidden border border-violet-500/40 bg-zinc-900 shadow-lg transform transition-all duration-500 hover:scale-[1.07] hover:shadow-[0_0_35px_rgba(139,92,246,0.6)] group cursor-pointer"
+      >
+        <img
+          src={org.src}
+          alt={`Organization ${index + 1}`}
+          className="w-full h-full object-cover group-hover:brightness-75 transition-all duration-500"
+        />
+        <div className="absolute bottom-0 w-full p-4 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+          <h3 className="text-violet-400 font-semibold text-base">{org.title}</h3>
+          <p className="text-gray-300 text-sm">{org.desc}</p>
         </div>
+      </div>
+      
+    ))}
+    
+  </div>
+</div>
+
         {/* Kontak */}
       </main>
 
