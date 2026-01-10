@@ -94,7 +94,7 @@ function App() {
               <ShinyText text="Hi I'm Seri Muliani Lubis" disabled={false} speed={3} className='custom-class' />
             </h1>
             <BlurText
-              text="Dedicated to designing and developing modern, high-quality web interfaces that combine aesthetics, performance, and usability."
+              text="Designing and developing real-world web projects, including UI/UX design, frontend web development, and REST API integration.."
               delay={150}
               animateBy="words"
               direction="top"
