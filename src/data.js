@@ -15,6 +15,8 @@ import Tools10 from "/assets/tools/canva.png";
 import Tools11 from "/assets/tools/figma.png";
 import Tools14 from "/assets/tools/html.png";
 import Tools15 from "/assets/tools/css.png";
+import Tools16 from "/assets/tools/python.png";
+import Tools17 from "/assets/tools/postg.jpg";
 
 export const listTools = [
   {
@@ -79,6 +81,20 @@ export const listTools = [
     nama: "CSS",
     ket: "Language",
     dad: "1500",
+  },
+    {
+    id: 16,
+    gambar: Tools16,
+    nama: "PYTHON",
+    ket: "Language",
+    dad: "1700",
+  },
+  {
+    id: 17,
+    gambar: Tools17,
+    nama: "PostgreSQL",
+    ket: "Language",
+    dad: "1900",
   },
 ];
 
