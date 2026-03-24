@@ -104,6 +104,7 @@ import Proyek3 from "/assets/proyek/proyek3.png";
 import Proyek4 from "/assets/proyek/proyek4.png";
 import Proyek5 from "/assets/proyek/proyek5.png";
 import Proyek6 from "/assets/proyek/proyek6.png";
+import Proyek7 from "/assets/proyek/proyek7.jpeg";
 export const listProyek = [
   {
     id: 1,
@@ -171,5 +172,15 @@ export const listProyek = [
     url: "https://github.com/Sermul/Prestasi_API",
     dad: "600",
   },
-  
+  {
+  id: 7,
+  image: Proyek7,
+  title: "VenKampus",
+  subtitle: "Helping campus teams find the right vendors for their events",
+  fullDescription: "VenKampus is a web app I’m currently building to make it easier for students and campus organizations to connect with vendors for events. Instead of searching manually, users can explore different options like food, merchandise, and documentation in one place. For now, I’m focusing on crafting a clean and responsive frontend experience while gradually adding more features.",
+  borderColor: "#F59E0B",
+  gradient: "linear-gradient(180deg, #F59E0B, #000)",
+  url: "https://github.com/Sermul/web-vendordanusan",
+  date: "2026"
+}
 ];
