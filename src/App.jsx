@@ -102,7 +102,7 @@ function App() {
             />
             <div className="flex items-center sm:gap-4 gap-2">
               <a 
-                href="./assets/CV_SERI.pdf" 
+                href="./assets/CV_Seri Muliani Lubis.pdf" 
                 download="CV_SERI.pdf" 
                 className="font-semibold bg-[#1a1a1a] p-4 px-6 rounded-full border border-gray-700 hover:bg-[#222] transition-colors"
               >
@@ -142,7 +142,7 @@ function App() {
 
 
                 <BlurText
-                  text="Hello! I'm Seri Muliani Lubis, a Junior Full Stack Developer with experience in building REST API using Go and developing web frontends using HTML, CSS, and JavaScript. I have a solid understanding of UI/UX principles for designing responsive and user-friendly interfaces, and I am capable of translating designs into functional web applications.I am enthusiastic about learning new technologies and continuously growing in the field of web development."
+                  text="Hello, I am Seri Muliani Lubis, an Informatics Engineering student with a strong interest in software development. I have worked on several independent projects, including applications and websites, as a way to explore and understand the end-to-end process of digital product development. I am interested in building functional and user-friendly solutions, and I am committed to continuous learning and growth in the field of technology."
                   delay={150}
                   animateBy="words"
                   direction="top"
