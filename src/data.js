@@ -105,6 +105,7 @@ import Proyek4 from "/assets/proyek/proyek4.png";
 import Proyek5 from "/assets/proyek/proyek5.png";
 import Proyek6 from "/assets/proyek/proyek6.png";
 import Proyek7 from "/assets/proyek/proyek7.jpeg";
+import Proyek8 from "/assets/proyek/proyek8.png";
 export const listProyek = [
   {
     id: 1,
@@ -181,6 +182,18 @@ export const listProyek = [
   borderColor: "#F59E0B",
   gradient: "linear-gradient(180deg, #F59E0B, #000)",
   url: "https://github.com/Sermul/web-vendordanusan",
-  date: "2026"
+  dad: "2026"
+},
+ {
+  id: 8,
+  image: Proyek8,
+  title: "Gymloc",
+  subtitle: "Helping people find the right gyms nearby with recommendations based on location, price, and facilities",
+  fullDescription: "GYMLOC is a web app I’m currently building to help users easily find gyms around them. Instead of searching manually, users can explore different gym options based on location, price, and available facilities in one place. For now, I’m focusing on creating a clean and responsive frontend while gradually adding more features like filtering and recommendations to enhance the user experience.",
+  borderColor: "#5aadbc",
+  gradient: "linear-gradient(180deg, #3c69c4, #000)",
+  url: "https://github.com/masterlearn22/GYMLOC.Reservavation_Gym",
+  dad: "2026"
 }
+
 ];
