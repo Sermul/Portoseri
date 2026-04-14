@@ -17,7 +17,8 @@ import Tools14 from "/assets/tools/html.png";
 import Tools15 from "/assets/tools/css.png";
 import Tools16 from "/assets/tools/python.png";
 import Tools17 from "/assets/tools/postg.jpg";
-
+import Tools18 from "/assets/tools/php.jpg";
+import Tools19 from "/assets/tools/laravel.png";
 export const listTools = [
   {
     id: 1,
@@ -96,6 +97,20 @@ export const listTools = [
     ket: "Language",
     dad: "1900",
   },
+  {
+  id: 18,
+  gambar: Tools18,
+  nama: "PHP",
+  ket: "Language",
+  dad: "2000",
+},
+{
+  id: 19,
+  gambar: Tools19,
+  nama: "Laravel",
+  ket: "Framework",
+  dad: "2100",
+},
 ];
 
 import Proyek1 from "/assets/proyek/proyek1.png";
