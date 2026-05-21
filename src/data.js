@@ -19,6 +19,11 @@ import Tools16 from "/assets/tools/python.png";
 import Tools17 from "/assets/tools/postg.jpg";
 import Tools18 from "/assets/tools/php.jpg";
 import Tools19 from "/assets/tools/laravel.png";
+
+import Tools20 from "/assets/tools/drawio.png";
+import Tools21 from "/assets/tools/powerdesigner.png";
+import Tools22 from "/assets/tools/odoo.jpg";
+import Tools23 from "/assets/tools/plantuml.jpg";
 export const listTools = [
   {
     id: 1,
@@ -70,6 +75,27 @@ export const listTools = [
     dad: "1100",
   },
   {
+    id: 20,
+    gambar: Tools20,
+    nama: "draw.io",
+    ket: "Diagramming Tool",
+    dad: "2200",
+  },
+  {
+    id: 21,
+    gambar: Tools21,
+    nama: "PowerDesigner",
+    ket: "Data Modeling",
+    dad: "2300",
+  },
+  {
+    id: 22,
+    gambar: Tools22,
+    nama: "Odoo",
+    ket: "ERP Platform",
+    dad: "2400",
+  },
+  {
     id: 14,
     gambar: Tools14,
     nama: "HTML",
@@ -83,7 +109,7 @@ export const listTools = [
     ket: "Language",
     dad: "1500",
   },
-    {
+  {
     id: 16,
     gambar: Tools16,
     nama: "PYTHON",
@@ -98,19 +124,26 @@ export const listTools = [
     dad: "1900",
   },
   {
-  id: 18,
-  gambar: Tools18,
-  nama: "PHP",
-  ket: "Language",
-  dad: "2000",
-},
-{
-  id: 19,
-  gambar: Tools19,
-  nama: "Laravel",
-  ket: "Framework",
-  dad: "2100",
-},
+    id: 18,
+    gambar: Tools18,
+    nama: "PHP",
+    ket: "Language",
+    dad: "2000",
+  },
+  {
+    id: 19,
+    gambar: Tools19,
+    nama: "Laravel",
+    ket: "Framework",
+    dad: "2100",
+  },
+    {
+    id: 23,
+    gambar: Tools23,
+    nama: "PlantUML",
+    ket: "Diagramming Tool",
+    dad: "2300",
+  },
 ];
 
 import Proyek1 from "/assets/proyek/proyek1.png";
@@ -166,7 +199,7 @@ export const listProyek = [
     url: "https://github.com/Sermul/fashlook",
     dad: "400",
   },
-    {
+  {
     id: 5,
     image: Proyek5,
     title: "QalbuMuslim Web",
@@ -189,26 +222,25 @@ export const listProyek = [
     dad: "600",
   },
   {
-  id: 7,
-  image: Proyek7,
-  title: "VenKampus",
-  subtitle: "Helping campus teams find the right vendors for their events",
-  fullDescription: "VenKampus is a web app I’m currently building to make it easier for students and campus organizations to connect with vendors for events. Instead of searching manually, users can explore different options like food, merchandise, and documentation in one place. For now, I’m focusing on crafting a clean and responsive frontend experience while gradually adding more features.",
-  borderColor: "#F59E0B",
-  gradient: "linear-gradient(180deg, #F59E0B, #000)",
-  url: "https://github.com/Sermul/web-vendordanusan",
-  dad: "2026"
-},
- {
-  id: 8,
-  image: Proyek8,
-  title: "Gymloc",
-  subtitle: "Helping people find the right gyms nearby with recommendations based on location, price, and facilities",
-  fullDescription: "GYMLOC is a web app I’m currently building to help users easily find gyms around them. Instead of searching manually, users can explore different gym options based on location, price, and available facilities in one place. For now, I’m focusing on creating a clean and responsive frontend while gradually adding more features like filtering and recommendations to enhance the user experience.",
-  borderColor: "#5aadbc",
-  gradient: "linear-gradient(180deg, #3c69c4, #000)",
-  url: "https://github.com/masterlearn22/GYMLOC.Reservavation_Gym",
-  dad: "2026"
-}
-
+    id: 7,
+    image: Proyek7,
+    title: "VenKampus",
+    subtitle: "Helping campus teams find the right vendors for their events",
+    fullDescription: "VenKampus is a web app I’m currently building to make it easier for students and campus organizations to connect with vendors for events. Instead of searching manually, users can explore different options like food, merchandise, and documentation in one place. For now, I’m focusing on crafting a clean and responsive frontend experience while gradually adding more features.",
+    borderColor: "#F59E0B",
+    gradient: "linear-gradient(180deg, #F59E0B, #000)",
+    url: "https://github.com/Sermul/web-vendordanusan",
+    dad: "2026"
+  },
+  {
+    id: 8,
+    image: Proyek8,
+    title: "Gymloc",
+    subtitle: "Helping people find the right gyms nearby with recommendations based on location, price, and facilities",
+    fullDescription: "GYMLOC is a web app I’m currently building to help users easily find gyms around them. Instead of searching manually, users can explore different gym options based on location, price, and available facilities in one place. For now, I’m focusing on creating a clean and responsive frontend while gradually adding more features like filtering and recommendations to enhance the user experience.",
+    borderColor: "#5aadbc",
+    gradient: "linear-gradient(180deg, #3c69c4, #000)",
+    url: "https://github.com/masterlearn22/GYMLOC.Reservavation_Gym",
+    dad: "2026"
+  }
 ];

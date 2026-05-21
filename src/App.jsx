@@ -87,14 +87,14 @@ function App() {
         <div className="hero grid md:grid-cols-2 items-center pt-10 xl:gap-0 gap-6 grid-cols-1">
           <div className="animate__animated animate__fadeInUp animate__delay-3s">
             <div className="flex items-center gap-3 mb-6 bg bg-zinc-800 w-fit p-4 rounded-2xl">
-              <img src="./assets/seri2.png" className="w-10 rounded-md" />
+                <img src="/assets/seri2.png" className="w-10 rounded-md" />
               <q>Don’t run from challenges — face them and grow through them</q>
             </div>
             <h1 className="text-5xl font-bold mb-6">
               <ShinyText text="Hi I'm Seri Muliani Lubis" disabled={false} speed={3} className='custom-class' />
             </h1>
             <BlurText
-              text="Designing and developing real-world web projects, including UI/UX design, frontend web development, and REST API integration.."
+              text="Designing and dFamiliar with various technologies and tools commonly used in the IT field, including web development, database management, UI/UX design, and collaborative development platforms."
               delay={150}
               animateBy="words"
               direction="top"
@@ -102,7 +102,7 @@ function App() {
             />
             <div className="flex items-center sm:gap-4 gap-2">
               <a 
-                href="./assets/CV_Seri Muliani Lubis.pdf" 
+                href="/assets/CV_Seri Muliani Lubis.pdf" 
                 download="CV_SERI.pdf" 
                 className="font-semibold bg-[#1a1a1a] p-4 px-6 rounded-full border border-gray-700 hover:bg-[#222] transition-colors"
               >
@@ -122,7 +122,7 @@ function App() {
               handle="serimuliani"
               status="Online"
               contactText="Contact Me"
-              avatarUrl="./assets/seri2.png"
+              avatarUrl="/assets/seri2.png"
               showUserInfo={true}
               enableTilt={true}
               enableMobileTilt={false}
@@ -256,11 +256,50 @@ function App() {
     id="scrollContainer"
     className="flex gap-10 overflow-x-hidden scroll-smooth px-16"
   >
-    {[
-      { src: "./assets/org1.jpg", title: "Organization of Informatics Engineering Students, Universitas Airlangga", desc: "Member of the Talent and Interests Section." },
-      { src: "./assets/org2.jpg", title: "Design TeaIKAMABA – The Dance Talent Section", desc: "Member of the Dance Talent Section." },
-      { src: "./assets/org3.jpg", title: "IKAMABA – Arts and Sports Division", desc: "Member of the Arts and Sports Division." },
-      { src: "./assets/org4.jpg", title: "Universitas Airlangga Softball Team – Player", desc: "Active player of the university softball team." },
+{[
+  { 
+    src: "/assets/org1.jpg", 
+    title: "Organization of Informatics Engineering Students, Universitas Airlangga", 
+    desc: "Member of the Talent and Interests Section." 
+  },
+  { 
+    src: "/assets/org2.jpg", 
+    title: "Design TeaIKAMABA – The Dance Talent Section", 
+    desc: "Member of the Dance Talent Section." 
+  },
+  { 
+    src: "/assets/org3.jpg", 
+    title: "IKAMABA – Arts and Sports Division", 
+    desc: "Member of the Arts and Sports Division." 
+  },
+  { 
+    src: "/assets/org4.jpg", 
+    title: "Universitas Airlangga Softball Team – Player", 
+    desc: "Active player of the university softball team." 
+  },
+
+  // === KEGIATAN BARU DARI SERTIFIKAT ===
+
+{ 
+  src: "/assets/TISL.png", 
+  title: "Informatics Engineering Sport League (TISL) 2024", 
+  desc: "Chief Executive of the Annual HIMTI Event – Informatics Engineering Sport League" 
+},
+{ 
+  src: "/assets/TEKNOVISTA.jpeg", 
+  title: "TEKNOVISTAFEST 2024", 
+  desc: "Committee Member – TEKNOVISTAFEST 2024" 
+},
+{ 
+  src: "/assets/HIMTIGOIN.png", 
+  title: "HIMTI Goes to Industry 2024", 
+  desc: "Committee Member – Industrial Visit to PT. Telkom Landmark Tower Surabaya" 
+},
+{ 
+  src: "/assets/TEKNIKCUP.png", 
+  title: "Engineering Cup – Futsal Category 2024", 
+  desc: "Committee Member – Engineering Cup Futsal Competition" 
+},
     ].map((org, index) => (
       <div
         key={index}
