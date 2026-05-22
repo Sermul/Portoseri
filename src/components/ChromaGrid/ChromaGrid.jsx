@@ -1,4 +1,4 @@
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 import { gsap } from "gsap";
 import "./ChromaGrid.css";
 
@@ -19,6 +19,7 @@ export const ChromaGrid = ({
   const setX = useRef(null);
   const setY = useRef(null);
   const pos = useRef({ x: 0, y: 0 });
+  const [isMobile, setIsMobile] = useState(false);
 
   // Gunakan `items` yang di-pass dari App.jsx, bukan data demo
   const data = items?.length ? items : [];
@@ -26,12 +27,20 @@ export const ChromaGrid = ({
   useEffect(() => {
     const el = rootRef.current;
     if (!el) return;
+
+    const mediaQuery = window.matchMedia("(max-width: 768px)");
+    const handleResize = () => setIsMobile(mediaQuery.matches);
+    handleResize();
+    mediaQuery.addEventListener?.("change", handleResize);
+
     setX.current = gsap.quickSetter(el, "--x", "px");
     setY.current = gsap.quickSetter(el, "--y", "px");
     const { width, height } = el.getBoundingClientRect();
     pos.current = { x: width / 2, y: height / 2 };
     setX.current(pos.current.x);
     setY.current(pos.current.y);
+
+    return () => mediaQuery.removeEventListener?.("change", handleResize);
   }, []);
 
   const moveTo = (x, y) => {
@@ -49,12 +58,14 @@ export const ChromaGrid = ({
   };
 
   const handleMove = (e) => {
+    if (isMobile) return;
     const r = rootRef.current.getBoundingClientRect();
     moveTo(e.clientX - r.left, e.clientY - r.top);
     gsap.to(fadeRef.current, { opacity: 0, duration: 0.25, overwrite: true });
   };
 
   const handleLeave = () => {
+    if (isMobile) return;
     gsap.to(fadeRef.current, {
       opacity: 1,
       duration: fadeOut,
@@ -63,6 +74,7 @@ export const ChromaGrid = ({
   };
 
   const handleCardMove = (e) => {
+    if (isMobile) return;
     const card = e.currentTarget;
     const rect = card.getBoundingClientRect();
     const x = e.clientX - rect.left;
