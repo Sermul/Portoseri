@@ -23,7 +23,7 @@ import Tools19 from "/assets/tools/laravel.png";
 import Tools20 from "/assets/tools/drawio.png";
 import Tools21 from "/assets/tools/powerdesigner.png";
 import Tools22 from "/assets/tools/odoo.jpg";
-import Tools23 from "/assets/tools/plantuml.jpg";
+import Tools23 from "/assets/tools/staruml.png";
 export const listTools = [
   {
     id: 1,
@@ -140,7 +140,7 @@ export const listTools = [
     {
     id: 23,
     gambar: Tools23,
-    nama: "PlantUML",
+    nama: "StarUML",
     ket: "Diagramming Tool",
     dad: "2300",
   },
@@ -154,6 +154,9 @@ import Proyek5 from "/assets/proyek/proyek5.png";
 import Proyek6 from "/assets/proyek/proyek6.png";
 import Proyek7 from "/assets/proyek/proyek7.jpeg";
 import Proyek8 from "/assets/proyek/proyek8.png";
+import Proyek9 from "/assets/proyek/proyek9.png";
+import Proyek10 from "/assets/proyek/proyek10.png";
+import Proyek11 from "/assets/proyek/proyek11.png";
 export const listProyek = [
   {
     id: 1,
@@ -242,5 +245,41 @@ export const listProyek = [
     gradient: "linear-gradient(180deg, #3c69c4, #000)",
     url: "https://github.com/masterlearn22/GYMLOC.Reservavation_Gym",
     dad: "2026"
-  }
+  },
+
+  {
+  id: 9,
+  image: Proyek9,
+  title: "Clean Wash",
+  subtitle: "UI/UX design for a modern laundry service application with a clean and user-friendly interface",
+  fullDescription: "Clean Wash is a mobile laundry service application design that I created focusing on a clean, simple, and modern user experience. The design helps users easily access laundry services such as clothing, shoes, and curtain cleaning through an intuitive interface. I designed the layout, navigation, icons, and visual elements to create a comfortable and user-friendly mobile experience while maintaining a fresh and hygienic brand identity.",
+  borderColor: "#5aadbc",
+  gradient: "linear-gradient(180deg, #6ea8ff, #000)",
+  url: "https://www.figma.com/proto/ywGO9R2mSVLZ1gM5ahBZKm/Untitled?node-id=1-427&t=NmxkXbgO5BfwLZ7r-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A427",
+  dad: "2026"
+},
+{
+  id: 10,
+  image: Proyek10,
+  title: "SEWEGER",
+  subtitle: "UI/UX design for a modern beverage brand website with a clean and aesthetic interface",
+  fullDescription: "SEWEGER is a beverage brand website design that I created with a modern and minimalist UI/UX approach. The website is designed to showcase drink products in a visually appealing way while maintaining a clean and easy-to-navigate user experience. I focused on creating responsive layouts, elegant visual compositions, and smooth user interaction to strengthen the brand identity and provide a comfortable browsing experience for users.",
+  borderColor: "#8b7b5e",
+  gradient: "linear-gradient(180deg, #c2a97d, #000)",
+  url: "https://www.figma.com/proto/l4gSYs2wTCoRwOl2YLi8KX/Suweger2?node-id=2008-662&p=f&t=uEmSXlucmv16saB4-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2008%3A662",
+  date: "2026"
+},
+
+{
+  id: 11,
+  image: Proyek11,
+  title: "Customer Journey Map Analysis",
+  subtitle: "UX research project focused on improving the usability and user experience of a school website.",
+  fullDescription:
+    "This project was created to analyze the user experience when searching for school information through a website. I developed a customer journey map to better understand user needs, identify the problems they encounter, and explore ways to improve the comfort, accessibility, and overall usability of the website.",
+  borderColor: "#c98b4d",
+  gradient: "linear-gradient(180deg, #e8b16a, #000)",
+  url: "https://www.figma.com/",
+  date: "2026"
+}
 ];
