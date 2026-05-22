@@ -86,7 +86,7 @@ export const ChromaGrid = ({
   return (
     <div
       ref={rootRef}
-      className={`chroma-grid ${className}`}
+      className={`chroma-grid ${className} ${isMobile ? "chroma-mobile" : ""}`}
       style={
         {
           "--r": `${radius}px`,
@@ -94,14 +94,14 @@ export const ChromaGrid = ({
           "--rows": rows,
         }
       }
-      onPointerMove={handleMove}
-      onPointerLeave={handleLeave}
+      onPointerMove={!isMobile ? handleMove : undefined}
+      onPointerLeave={!isMobile ? handleLeave : undefined}
     >
       {data.map((c, i) => (
         <article
           key={i}
           className="chroma-card"
-          onMouseMove={handleCardMove}
+          onMouseMove={!isMobile ? handleCardMove : undefined}
           // Panggil `onItemClick` saat kartu diklik dan kirim datanya
           onClick={() => onItemClick(c)}
           style={
