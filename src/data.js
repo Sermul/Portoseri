@@ -232,7 +232,7 @@ export const listProyek = [
     fullDescription: "VenKampus is a web app I’m currently building to make it easier for students and campus organizations to connect with vendors for events. Instead of searching manually, users can explore different options like food, merchandise, and documentation in one place. For now, I’m focusing on crafting a clean and responsive frontend experience while gradually adding more features.",
     borderColor: "#F59E0B",
     gradient: "linear-gradient(180deg, #F59E0B, #000)",
-    url: "https://github.com/Sermul/web-vendordanusan",
+    url: "https://web-vendordanusan-ogor.vercel.app/",
     dad: "2026"
   },
   {
