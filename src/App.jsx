@@ -222,6 +222,16 @@ function App() {
               ease="power3.out"
             />
           </div>
+          <div className="mt-10 text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" data-aos-once="true">
+            <a
+              href="https://github.com/Sermul"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center justify-center rounded-full border border-violet-500 bg-violet-600/10 px-6 py-3 text-sm font-semibold text-white transition hover:border-violet-400 hover:bg-violet-500/20"
+            >
+              Lihat proyek lainnya
+            </a>
+          </div>
         </div>
         {/* Proyek */}
 {/* Pengalaman Organisasi */}
