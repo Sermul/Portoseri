@@ -213,7 +213,7 @@ export const listProyek = [
     "This project was created to analyze the user experience when searching for school information through a website. I developed a customer journey map to better understand user needs, identify the problems they encounter, and explore ways to improve the comfort, accessibility, and overall usability of the website.",
   borderColor: "#c98b4d",
   gradient: "linear-gradient(180deg, #e8b16a, #000)",
-  url: "https://www.figma.com/",
+  url: "https://www.figma.com/board/7d1FDlRbl89Vg4A2f8VdEc/Customer-Journey-Map--Community-?node-id=0-1&t=96TONuOhBNkoCYY5-1",
   date: "2026"
 },
   {
