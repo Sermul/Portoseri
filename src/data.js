@@ -168,7 +168,7 @@ export const listProyek = [
   fullDescription: "SEWEGER is a beverage brand website design that I created with a modern and minimalist UI/UX approach. The website is designed to showcase drink products in a visually appealing way while maintaining a clean and easy-to-navigate user experience. I focused on creating responsive layouts, elegant visual compositions, and smooth user interaction to strengthen the brand identity and provide a comfortable browsing experience for users.",
   borderColor: "#8b7b5e",
   gradient: "linear-gradient(180deg, #c2a97d, #000)",
-  url: "https://www.figma.com/proto/l4gSYs2wTCoRwOl2YLi8KX/Suweger2?node-id=2008-662&p=f&t=uEmSXlucmv16saB4-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2008%3A662",
+  url: "https://suweger-brand-website.vercel.app/",
   date: "2026"
 },
  {
