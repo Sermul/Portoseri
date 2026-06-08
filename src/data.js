@@ -160,12 +160,12 @@ import Proyek11 from "/assets/proyek/proyek11.png";
 export const listProyek = [
  
  
- {
+{
   id: 1,
   image: Proyek10,
-  title: "SEWEGER",
-  subtitle: "UI/UX design for a modern beverage brand website with a clean and aesthetic interface",
-  fullDescription: "SEWEGER is a beverage brand website design that I created with a modern and minimalist UI/UX approach. The website is designed to showcase drink products in a visually appealing way while maintaining a clean and easy-to-navigate user experience. I focused on creating responsive layouts, elegant visual compositions, and smooth user interaction to strengthen the brand identity and provide a comfortable browsing experience for users.",
+  title: "SUWEGER", // Disamakan dengan poster "Suweger" atau tetap "SEWEGER" sesuai selera
+  subtitle: "A simple, fun, and modern frontend web development for a beverage brand, built from scratch.",
+  fullDescription: "SUWEGER is a responsive e-commerce web platform built to transform a traditional beverage brand into a modern digital experience. Shifting focus from just design to actual implementation, I developed this frontend project from scratch using HTML5, CSS3, and JavaScript. I successfully translated Figma mockups into pixel-perfect code, implemented interactive features like a dynamic drink catalog and an intuitive shopping cart management system, and ensured smooth user interactions across various screen sizes to deliver a seamless browsing experience.",
   borderColor: "#8b7b5e",
   gradient: "linear-gradient(180deg, #c2a97d, #000)",
   url: "https://suweger-brand-website.vercel.app/",
