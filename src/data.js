@@ -149,7 +149,7 @@ export const listTools = [
 import Proyek1 from "/assets/proyek/proyek1.png";
 import Proyek2 from "/assets/proyek/proyek2.png";
 import Proyek3 from "/assets/proyek/proyek3.png";
-import Proyek4 from "/assets/proyek/proyek4.png";
+import Proyek12 from "/assets/proyek/proyek4.png";
 import Proyek5 from "/assets/proyek/proyek5.png";
 import Proyek6 from "/assets/proyek/proyek6.png";
 import Proyek7 from "/assets/proyek/proyek7.jpeg";
@@ -157,7 +157,7 @@ import Proyek8 from "/assets/proyek/proyek8.png";
 import Proyek9 from "/assets/proyek/proyek9.png";
 import Proyek10 from "/assets/proyek/proyek10.png";
 import Proyek11 from "/assets/proyek/proyek11.png";
-import Proyek12 from "/assets/proyek/proyek12.png";
+import Proyek4 from "/assets/proyek/proyek12.png";
 export const listProyek = [
  
  
@@ -196,7 +196,7 @@ export const listProyek = [
   },
   {
   id: 12,
-  image: Proyek12, // ganti nomornya sesuai urutan file kamu
+  image: Proyek4, // ganti nomornya sesuai urutan file kamu
   title: "EventHub",
   subtitle: "A vendor discovery platform for Indonesian university students to find trusted vendors for campus events.",
   fullDescription: "EventHub is a vendor discovery web platform built specifically for Indonesian university students and campus organizations. The platform makes it easier to find, compare, and contact verified vendors for events, bazaars, seminars, and fundraising activities. Built using vanilla HTML, CSS, and JavaScript — no frameworks — the project features a multi-page structure with interactive components including a vendor directory with search and filter, a registration form, and an about page. Focused on clean editorial design with dark/light mode support and smooth animations.",
@@ -241,7 +241,7 @@ export const listProyek = [
   },
   {
     id: 8,
-    image: Proyek4,
+    image: Proyek12,
     title: "Fashlook Web",
     subtitle: "A fashion inspiration website built using HTML, CSS, and JavaScript. It helps users find their...",
     fullDescription:"A fashion inspiration website built using HTML, CSS, and JavaScript. It helps users find their signature style and explore the latest fashion trends easily.",
