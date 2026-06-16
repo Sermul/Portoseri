@@ -154,7 +154,7 @@ import Proyek5 from "/assets/proyek/proyek5.png";
 import Proyek6 from "/assets/proyek/proyek6.png";
 import Proyek7 from "/assets/proyek/proyek7.jpeg";
 import Proyek8 from "/assets/proyek/proyek8.png";
-import Proyek9 from "/assets/proyek/proyek9.png";
+// import Proyek9 from "/assets/proyek/proyek9.png";
 import Proyek10 from "/assets/proyek/proyek10.png";
 import Proyek11 from "/assets/proyek/proyek11.png";
 import Proyek4 from "/assets/proyek/proyek12.png";
@@ -261,17 +261,17 @@ export const listProyek = [
     url: "https://www.figma.com/proto/Ey5HuBh9mcxOfqZcxOlFCg/PETNEST?node-id=116-2833&p=f&t=f71lDyKb54hQQwBu-0&scaling=scale-down&content-scaling=fixed&page-id=116%3A690",
     dad: "100",
   },
-  {
-  id: 9,
-  image: Proyek9,
-  title: "Clean Wash",
-  subtitle: "UI/UX design for a modern laundry service application with a clean and user-friendly interface",
-  fullDescription: "Clean Wash is a mobile laundry service application design that I created focusing on a clean, simple, and modern user experience. The design helps users easily access laundry services such as clothing, shoes, and curtain cleaning through an intuitive interface. I designed the layout, navigation, icons, and visual elements to create a comfortable and user-friendly mobile experience while maintaining a fresh and hygienic brand identity.",
-  borderColor: "#5aadbc",
-  gradient: "linear-gradient(180deg, #6ea8ff, #000)",
-  url: "https://www.figma.com/proto/ywGO9R2mSVLZ1gM5ahBZKm/Untitled?node-id=1-427&t=NmxkXbgO5BfwLZ7r-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A427",
-  dad: "2026"
-}
+//   {
+//   id: 9,
+//   image: Proyek9,
+//   title: "Clean Wash",
+//   subtitle: "UI/UX design for a modern laundry service application with a clean and user-friendly interface",
+//   fullDescription: "Clean Wash is a mobile laundry service application design that I created focusing on a clean, simple, and modern user experience. The design helps users easily access laundry services such as clothing, shoes, and curtain cleaning through an intuitive interface. I designed the layout, navigation, icons, and visual elements to create a comfortable and user-friendly mobile experience while maintaining a fresh and hygienic brand identity.",
+//   borderColor: "#5aadbc",
+//   gradient: "linear-gradient(180deg, #6ea8ff, #000)",
+//   url: "https://www.figma.com/proto/ywGO9R2mSVLZ1gM5ahBZKm/Untitled?node-id=1-427&t=NmxkXbgO5BfwLZ7r-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A427",
+//   dad: "2026"
+// }
 
 
 
