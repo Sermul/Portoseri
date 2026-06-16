@@ -157,6 +157,7 @@ import Proyek8 from "/assets/proyek/proyek8.png";
 import Proyek9 from "/assets/proyek/proyek9.png";
 import Proyek10 from "/assets/proyek/proyek10.png";
 import Proyek11 from "/assets/proyek/proyek11.png";
+import Proyek12 from "/assets/proyek/proyek12.png";
 export const listProyek = [
  
  
@@ -193,6 +194,17 @@ export const listProyek = [
     url: "https://web-vendordanusan-ogor.vercel.app/",
     dad: "2026"
   },
+  {
+  id: 12,
+  image: Proyek12, // ganti nomornya sesuai urutan file kamu
+  title: "EventHub",
+  subtitle: "A vendor discovery platform for Indonesian university students to find trusted vendors for campus events.",
+  fullDescription: "EventHub is a vendor discovery web platform built specifically for Indonesian university students and campus organizations. The platform makes it easier to find, compare, and contact verified vendors for events, bazaars, seminars, and fundraising activities. Built using vanilla HTML, CSS, and JavaScript — no frameworks — the project features a multi-page structure with interactive components including a vendor directory with search and filter, a registration form, and an about page. Focused on clean editorial design with dark/light mode support and smooth animations.",
+  borderColor: "#5B52F0",
+  gradient: "linear-gradient(180deg, #5B52F0, #000)",
+  url: "https://event-hub-livid-eight.vercel.app/", // ganti kalau ada link baru
+  date: "2026"
+},
     {
     id: 4,
     image: Proyek8,
