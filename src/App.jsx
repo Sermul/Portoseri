@@ -101,9 +101,9 @@ function App() {
               className=" mb-6"
             />
             <div className="flex items-center sm:gap-4 gap-2">
-              <a 
-                href="/assets/CV_seri_muliani_lubis.pdf" 
-                download="CV_SERI_MULIANI_LUBIS.pdf" 
+           <a
+  href={`${import.meta.env.BASE_URL}assets/CV_seri_muliani_lubis.pdf`}
+  download="CV_SERI_MULIANI_LUBIS.pdf"
                 className="font-semibold bg-[#1a1a1a] p-4 px-6 rounded-full border border-gray-700 hover:bg-[#222] transition-colors"
               >
                 <ShinyText text="Download CV" disabled={false} speed={3} className="custom-class" />
